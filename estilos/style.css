@@ -222,12 +222,12 @@ article h2 {
   padding: 10px;
   border-radius: 8px;
   border-left: 5px solid var(--destaque-inverso);
-  transition: border-color 0.8s, border-width 0.8s ;
+  transition: border-color 1s, border-width 1s ;
 }
 
 #projeto-container .projeto:hover {
   border-color: var(--destaque);
-  border-left-width: 15px;
+  border-left-width: 10px;
   cursor: pointer;
 }
 
@@ -238,6 +238,15 @@ article h2 {
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
+  transition: padding-right 2s;
+}
+
+#projeto-container a{
+  transition: transform 1s;
+}
+
+#projeto-container a:hover {
+  transform: translateY(10px);
 }
 
 footer {
@@ -283,9 +292,15 @@ footer {
       max-width: 60%;
     }
 
+    div#projeto-container a {
+      min-width: 40%;
+    }
+
     #projeto-container .foto {
       aspect-ratio: 1/1;
-      max-width: 40%;
+      min-width: 40%;
       max-height: 300px;
+      object-fit: contain;
     }
+
 }
