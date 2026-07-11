@@ -242,6 +242,11 @@ footer {
       grid-template-columns: 1fr 1fr;
     }
 
+    #formacao-container .curso {
+      max-height: 600px;
+      min-height: 200px;
+    }
+
 
     #projeto-container .projeto {
       flex-direction: row-reverse;
@@ -255,6 +260,6 @@ footer {
     #projeto-container .foto {
       aspect-ratio: 1/1;
       max-width: 40%;
-      max-height: 200px;
+      max-height: 300px;
     }
 }
